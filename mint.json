@@ -59,6 +59,10 @@
       ]
     }
   ],
+  "modeToggle": {
+    "default": "dark",
+    "isHidden": true
+  },
   "footerSocials": {
     "twitter": "https://twitter.com/mintlify",
     "github": "https://github.com/mintlify",
