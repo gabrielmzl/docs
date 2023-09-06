@@ -1,71 +1,88 @@
 ---
 title: Introduction
-description: "Welcome to the home of your new documentation"
+description: "Unleash Steam's Power with Steamwebapi: Access Info, Profiles, Inventories, and Items with Ease. Get detailed data effortlessly, including profiles, inventories, and items. No more limits, just endless possibilities at your fingertips."
 ---
 
-<img
-  className="block dark:hidden"
-  src="/images/hero-light.svg"
-  alt="Hero Light"
-/>
-<img
-  className="hidden dark:block"
-  src="/images/hero-dark.svg"
-  alt="Hero Dark"
-/>
+## What is SteamWebApi?
 
-## Setting up
+Steamwebapi is a high-quality API service that provides developers with seamless access to a wide range of information on Steam games, user profiles, inventories, and many more. By using Steamwebapi, you can effortlessly retrieve data without having to rely directly on the Steam API, thereby reducing the risk of IP blocking or application limitations. It's important to note that Steamwebapi operates as an independent service and is not affiliated with Valve, Steam, or any of their partners. All rights are reserved by its respective owners. Unleash the potential of Steamwebapi to seamlessly integrate game data and enhance your application's features!
 
-The first step to world-class documentation is setting up your editing environnments.
+## Main features
+
+- **List all currencies**
+
+This API costs 5 credits per request. This API endpoint provides a list of all available currencies that can be used with the "base" parameter for currency conversion. By default, the base currency is set to USD (United States Dollar).
+
+- **Exchange rate**
+
+This API costs 1 credit per request. It returns an exchange rate for the specified currency. The default exchange rate is based on the USD exchange rate, which you can change using the "base" parameter. You can specify the currency you want to exchange to using the "change" parameter. For example, "change=EUR" and "base=USD" means you want to exchange from EUR to USD.
+
+You can find the entire abbreviation here: https://en.wikipedia.org/wiki/ISO_4217. Look under "Code" to find the abbreviation
+
+- **Get random profiles**
+
+This API costs 2 credits per Profile. This API will return random 5 Profiles with Inventory Informations and Items, you can change the limit with the limit parameter.
+
+- **Get float item**
+
+This API incurs a cost of 1 Credit per request and provides float information for an item. You can provide parameters as follows: either inspectlink, or a combination of m, a, d, and s. At least one parameter is required.
+
+- **Get all Items from a specific Game**
+
+Discover a comprehensive database of all Steam Market items, encompassing prices, history, item names, item conditions, and a wealth of additional information. This dynamic item list provides endless possibilities for your programming needs. Stay up-to-date with the latest information as the list is regularly maintained and supports popular games like CS:GO, Dota, and Rust. Expect even more game support in the future, as we continue to expand our offerings. Please note that the credit cost for accessing this valuable resource is currently set at just 20 credits, although credit pricing may change in the future.
+
+- **Get Item Infos from a specific Game**
+
+Get all possible item names, types or groups from the game.
+
+- **Search for items**
+
+Search for items
+
+- **Get item Details**
+
+This API endpoint returns a single item by market_hash_name, slug or hashId. This API requires 1 credits per request. No Parameters.
+
+- **Get price history of an item**
+
+This endpoint returns the price history of an item. API Cost 10 Credits.
+
+- **Steam Inventory API**
+
+This endpoint utilizes a pool of proxies to fetch the Steam inventory data, allowing us to bypass rate-limiting restrictions. The data returned is an exact representation of Steam's response, ensuring accuracy and real-time information. However, if you prefer a more user-friendly format, you can enable the parse parameter. This will provide a parsed version of the data, including item prices and comprehensive details. It's important to note that each request to this API consumes 5 credits.
+
+Detailed Inventory
+To enhance your experience, we recommend utilizing the parse parameter with a value of 1. This will provide you with item prices and a wealth of detailed information, allowing for a more comprehensive understanding of the inventory.
+
+New feature: Tracking
+You now have the ability to track inventory by requesting an inventory update on a daily basis. This will enable you to monitor the departure or left date of each item, and the total value of the inventory on that day. The initial tracking time will serve as the entry date's important to note that if another user of Steamwebapi is also tracking the same user, the entry date of an item could be earlier, as it depends on the time of tracking by each individual user.
+
+## Support and Community
+
+For additional information and help, you can use one of the following channels:
+
+- [**Discord**](https://discord.gg/N5yWqRYzEr)
+
+## Roadmap
+
+To follow the evolution of the product, we suggest that you follow our public roadmap on [Canny](https://steamwebapi.canny.io).
+
+
+## Explore
 
 <CardGroup cols={2}>
   <Card
-    title="Edit Your Docs"
-    icon="pen-to-square"
-    href="https://mintlify.com/docs/quickstart"
+    title="Quick Start"
+    icon="play"
+    href="/quickstart"
   >
-    Get your docs set up locally for easy development
+    Make your first request
   </Card>
   <Card
-    title="Preview Changes"
-    icon="image"
-    href="https://mintlify.com/docs/development"
+    title="API Reference"
+    icon="file"
+    href="/api-referenc"
   >
-    Preview your changes before you push to make sure they're perfect
-  </Card>
-</CardGroup>
-
-## Make it yours
-
-Update your docs to your brand and add valuable content for the best user conversion.
-
-<CardGroup cols={2}>
-  <Card
-    title="Customize Style"
-    icon="palette"
-    href="https://mintlify.com/docs/settings/global"
-  >
-    Customize your docs to your company's colors and brands
-  </Card>
-  <Card
-    title="Reference APIs"
-    icon="code"
-    href="https://mintlify.com/docs/api-playground/openapi"
-  >
-    Automatically generate endpoints from an OpenAPI spec
-  </Card>
-  <Card
-    title="Add Components"
-    icon="screwdriver-wrench"
-    href="https://mintlify.com/docs/components/accordion"
-  >
-    Build interactive features and designs to guide your users
-  </Card>
-  <Card
-    title="Get Inspiration"
-    icon="stars"
-    href="https://mintlify.com/showcase"
-  >
-    Check out our showcase of our favorite documentation
+    Integrate our REST API.
   </Card>
 </CardGroup>
