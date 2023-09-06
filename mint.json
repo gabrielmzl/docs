@@ -63,6 +63,11 @@
     "default": "dark",
     "isHidden": true
   },
+  "classes": {
+    "anchors": "group-hover:bg-gradient-to-tr from-primary to-primary-dark dark:from-[#61DAFB] dark:to-[#06BCEE]",
+    "activeAnchors": "bg-gradient-to-tr"
+  },
+  "backgroundImage": "/images/background.png",
   "footerSocials": {
     "twitter": "https://twitter.com/mintlify",
     "github": "https://github.com/mintlify",
