@@ -63,9 +63,9 @@
     {
       "group": "Explore Endpoint",
       "pages": [
-        "api-reference/currency/random-profiles",
-        "api-reference/currency/last-profiles",
-        "api-reference/currency/top-list"
+        "api-reference/explore/random-profiles",
+        "api-reference/explore/last-profiles",
+        "api-reference/explore/top-list"
       ]
     }
   ],
