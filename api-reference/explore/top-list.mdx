@@ -1,0 +1,61 @@
+---
+title: "Top list profiles"
+api: "GET https://www.steamwebapi.com/explore/api/toplist?key={apikey}&limit={limit}"
+description: "This endpoint retrieves the top 5 profiles with the highest combined value across inventory, information, and items."
+---
+
+### Path
+
+<ParamField path="apikey" type="string" required>
+  Your API key under: Dashboard (TOP RIGHT)
+</ParamField>
+
+<ParamField path="limit" type="number" default="5">
+  Limit of the items max. 50 every 1 profile costs 2 credits for example Limit 5 costs 10 credits.
+</ParamField>
+
+<RequestExample>
+
+```bash Example Request
+curl --location --request GET 'https://www.steamwebapi.com/explore/api/toplist?key=$YOUR_API_KEY&limit=$LIMIT' \
+--header 'Content-Type: application/json' \
+```
+</RequestExample>
+
+<ResponseExample>
+
+```json Response
+
+{
+  "status": "success",
+  "data": [
+    {
+      "profile": {
+        "steamid": "76561198336029776",
+        "communityvisibilitystate": 3,
+        "profilestate": 1,
+        "personaname": "Joe CSGORoll.com",
+        "commentpermission": 1,
+        "profileurl": "https://steamcommunity.com/profiles/76561198336029776",
+        "avatar": "https://avatars.steamstatic.com/500b1f06377552ebca48473ff9108352af9d7382.jpg",
+        "avatarmedium": "https://avatars.steamstatic.com/500b1f06377552ebca48473ff9108352af9d7382_medium.jpg",
+        "avatarfull": "https://avatars.steamstatic.com/500b1f06377552ebca48473ff9108352af9d7382_full.jpg",
+        "avatarhash": "500b1f06377552ebca48473ff9108352af9d7382",
+        "lastlogoff": null,
+        "personastate": null,
+        "realname": null,
+        "primaryclanid": "103582791437317505",
+        "timecreated": 1475677650,
+        "locstatecode": null,
+        "loccityid": null,
+        "loccountrycode": null,
+        "accountname": "76561198336029776"
+      },
+      "worth": 673947.5,
+      "size": 934
+    }
+  ]
+}
+```
+
+</ResponseExample>
