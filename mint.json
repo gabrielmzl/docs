@@ -56,8 +56,16 @@
     {
       "group": "Currency Endpoint",
       "pages": [
-        "api-reference/currency-endpoint/list-all",
-        "api-reference/currency-endpoint/exchange-rate"
+        "api-reference/currency/list-all",
+        "api-reference/currency/exchange-rate"
+      ]
+    },
+    {
+      "group": "Explore Endpoint",
+      "pages": [
+        "api-reference/currency/random-profiles",
+        "api-reference/currency/last-profiles",
+        "api-reference/currency/top-list"
       ]
     }
   ],

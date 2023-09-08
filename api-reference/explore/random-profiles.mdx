@@ -1,0 +1,35 @@
+---
+title: "Random profiles"
+api: "GET https://www.steamwebapi.com/explore/api/random?key={apikey}&limit={limit}"
+description: "This endpoint return random 5 Profiles with Inventory Informations and Items."
+---
+
+### Path
+
+<ParamField path="apikey" type="string">
+  Your API key under: Dashboard (TOP RIGHT)
+</ParamField>
+
+<ParamField path="limit" type="number">
+  Limit of the items max. 50 every 1 profile costs 2 credits for example Limit 5 costs 10 credits.
+</ParamField>
+
+<RequestExample>
+
+```bash Example Request
+curl --location --request GET 'https://www.steamwebapi.com/explore/api/random?key=$YOUR_API_KEY&limit=$LIMIT' \
+--header 'Content-Type: application/json' \
+```
+</RequestExample>
+
+<ResponseExample>
+
+```json Response
+
+  {
+    "status": "success",
+    "data": [...]
+  }
+```
+
+</ResponseExample>

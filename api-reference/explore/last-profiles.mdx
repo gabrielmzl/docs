@@ -1,0 +1,42 @@
+---
+title: "Last profiles"
+api: "GET https://www.steamwebapi.com/currency/api/exchange?key={apikey}&change={change}&base={base}"
+description: "This endpoint exchange rates."
+---
+
+### Path
+
+<ParamField path="apikey" type="string">
+  Your API key under: Dashboard (TOP RIGHT)
+</ParamField>
+
+<ParamField path="change" type="string">
+  The currency code (wikipedia e.g. EUR, TRY, RUB) you want to change 
+</ParamField>
+
+<ParamField path="base" type="object">
+  The base currency, default USD
+</ParamField>
+
+<RequestExample>
+
+```bash Example Request
+curl --location --request GET 'https://www.steamwebapi.com/currency/api/exchange?key=$YOUR_API_KEY&change=$CHANGE&base=$BASE' \
+--header 'Content-Type: application/json' \
+```
+</RequestExample>
+
+<ResponseExample>
+
+```json Response
+
+  {
+    "baseRate": 1,
+    "changeRate": 96.40504502301403,
+    "change": "RUB",
+    "base": "USD",
+    "symbol": "\u20bd"
+  }
+```
+
+</ResponseExample>
