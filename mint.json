@@ -67,6 +67,37 @@
         "api-reference/explore/last-profiles",
         "api-reference/explore/top-list"
       ]
+    },
+    {
+      "group": "Float Endpoint",
+      "pages": [
+        "api-reference/float/get-float"
+      ]
+    },
+    {
+      "group": "Items Endpoint",
+      "pages": [
+        "api-reference/items/get-all-items-from-game",
+        "api-reference/items/get-item-info-from-game",
+        "api-reference/items/search-for-items",
+        "api-reference/items/get-item-details",
+        "api-reference/items/get-price-history-from-item"
+      ]
+    },
+    {
+      "group": "Inventory Endpoint",
+      "pages": [
+        "api-reference/inventory/get-inventory",
+        "api-reference/inventory/track-inventory"
+      ]
+    },
+    {
+      "group": "Profile Endpoint",
+      "pages": [
+        "api-reference/profile/convert-steamid",
+        "api-reference/profile/get-user-profile",
+        "api-reference/profile/get-friendlist"
+      ]
     }
   ],
   "modeToggle": {

@@ -1,0 +1,78 @@
+---
+title: "Float"
+api: "GET https://www.steamwebapi.com/float/api/item?key={apikey}&inspectlink={inspectlink}&s={s}&m={m}&a={a}d={d}"
+description: "This endpoint return a float of skin."
+---
+
+You can provide parameters as follows: either inspectlink, or a combination of m, a, d, and s. At least one parameter is required.
+
+### Path
+
+<ParamField path="apikey" type="string" required>
+  Your API key under: Dashboard (TOP RIGHT)
+</ParamField>
+
+<ParamField path="inspectlink" type="string">
+  Inspect Link of the item e.g. steam://...
+</ParamField>
+
+<ParamField path="s" type="string">
+  Steam ID - not required if you have inspectlink
+</ParamField>
+
+<ParamField path="m" type="string">
+  Market Item ID - not required if you have inspectlink
+</ParamField>
+
+<ParamField path="a" type="string">
+  Asset ID - not required if you have inspectlink
+</ParamField>
+
+<ParamField path="d" type="string">
+  D ID - not required if you have inspectlink
+</ParamField>
+
+<RequestExample>
+
+```bash Example Request
+curl --location --request GET 'https://www.steamwebapi.com/float/api/item?key=$YOUR_API_KEY&inspectlink=$INSPECT_LINK' \
+--header 'Content-Type: application/json' \
+```
+</RequestExample>
+
+<ResponseExample>
+
+```json Response
+
+{
+  "stickers": [
+    {
+      "slot": 0,
+      "stickerId": 4686
+    },
+    {
+      "slot": 2,
+      "stickerId": 2406
+    },
+    {
+      "slot": 3,
+      "stickerId": 3537
+    }
+  ],
+  "itemid": "27008387571",
+  "defindex": 9,
+  "paintindex": 475,
+  "rarity": 6,
+  "quality": 4,
+  "paintseed": 296,
+  "inventory": 37,
+  "origin": 8,
+  "s": "76561198193946777",
+  "a": "27008387571",
+  "d": "7558806148884263471",
+  "m": "0",
+  "floatvalue": 0.13441802561283112
+}
+```
+
+</ResponseExample>
