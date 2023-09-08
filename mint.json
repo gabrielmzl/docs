@@ -48,6 +48,10 @@
       "pages": ["packages/nodejs", "packages/python", "packages/php"]
     },
     {
+      "group": "Example projects",
+      "pages": ["example-projects/steam-inventory-calculator.mdx"]
+    },
+    {
       "group": "API Documentation",
       "pages": ["api-reference/authentication"]
     },
@@ -71,8 +75,7 @@
   },
   "backgroundImage": "/images/background.png",
   "footerSocials": {
-    "twitter": "https://twitter.com/mintlify",
-    "github": "https://github.com/mintlify",
-    "linkedin": "https://www.linkedin.com/company/mintsearch"
+    "discord": "https://discord.gg/N5yWqRYzEr",
+    "github": "https://github.com/steamwebapi"
   }
 }
