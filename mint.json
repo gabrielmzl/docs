@@ -47,7 +47,7 @@
     },
     {
       "group": "Example projects",
-      "pages": ["projects/steam-inventory-calculator.mdx"]
+      "pages": ["projects/steam-inventory-calculator"]
     },
     {
       "group": "API Documentation",
