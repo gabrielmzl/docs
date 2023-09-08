@@ -54,12 +54,10 @@
       "pages": ["api-reference/authentication"]
     },
     {
-      "group": "Endpoint Examples",
+      "group": "Currency Endpoint",
       "pages": [
-        "api-reference/endpoint/get",
-        "api-reference/endpoint/create",
-        "api-reference/endpoint/update",
-        "api-reference/endpoint/delete"
+        "api-reference/currency-endpoint/list-all",
+        "api-reference/currency-endpoint/exchange-rate"
       ]
     }
   ],
