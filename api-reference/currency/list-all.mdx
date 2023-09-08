@@ -6,11 +6,11 @@ description: "This endpoint list all currencies."
 
 ### Path
 
-<ParamField path="apikey" type="string">
+<ParamField path="apikey" type="string" required="true">
   Your API key under: Dashboard (TOP RIGHT)
 </ParamField>
 
-<ParamField path="base" type="object">
+<ParamField path="base" type="object" default="USD">
   The currency code you want to convert from (base currency) for currency conversion. If not provided, USD is used as the base currency.
 </ParamField>
 

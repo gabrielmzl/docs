@@ -6,15 +6,15 @@ description: "This endpoint exchange rates."
 
 ### Path
 
-<ParamField path="apikey" type="string">
+<ParamField path="apikey" type="string" required="true">
   Your API key under: Dashboard (TOP RIGHT)
 </ParamField>
 
-<ParamField path="change" type="string">
+<ParamField path="change" type="string" required="true">
   The currency code (wikipedia e.g. EUR, TRY, RUB) you want to change 
 </ParamField>
 
-<ParamField path="base" type="object">
+<ParamField path="base" type="object" default="USD">
   The base currency, default USD
 </ParamField>
 

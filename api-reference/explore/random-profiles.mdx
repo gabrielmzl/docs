@@ -6,11 +6,11 @@ description: "This endpoint return random 5 Profiles with Inventory Informations
 
 ### Path
 
-<ParamField path="apikey" type="string">
+<ParamField path="apikey" type="string" required="true">
   Your API key under: Dashboard (TOP RIGHT)
 </ParamField>
 
-<ParamField path="limit" type="number">
+<ParamField path="limit" type="number" default=5>
   Limit of the items max. 50 every 1 profile costs 2 credits for example Limit 5 costs 10 credits.
 </ParamField>
 
@@ -26,10 +26,32 @@ curl --location --request GET 'https://www.steamwebapi.com/explore/api/random?ke
 
 ```json Response
 
-  {
-    "status": "success",
-    "data": [...]
-  }
+{
+  "status": "success",
+  "data": [
+    {
+      "steamid": "76561198164204158",
+      "communityvisibilitystate": null,
+      "profilestate": null,
+      "personaname": "King",
+      "commentpermission": null,
+      "profileurl": "https://steamcommunity.com/profiles/76561198164204158",
+      "avatar": "https://avatars.steamstatic.com/ac608c70c131d3328e278fc419701178487b3735.jpg",
+      "avatarmedium": "https://avatars.steamstatic.com/ac608c70c131d3328e278fc419701178487b3735_medium.jpg",
+      "avatarfull": "https://avatars.steamstatic.com/ac608c70c131d3328e278fc419701178487b3735_full.jpg",
+      "avatarhash": "ac608c70c131d3328e278fc419701178487b3735",
+      "lastlogoff": null,
+      "personastate": null,
+      "realname": null,
+      "primaryclanid": null,
+      "timecreated": null,
+      "locstatecode": null,
+      "loccityid": null,
+      "loccountrycode": "1",
+      "accountname": "76561198164204158"
+    }
+  ]
+}
 ```
 
 </ResponseExample>
