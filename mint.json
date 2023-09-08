@@ -10,8 +10,6 @@
     "primary": "#06BCEE",
     "light": "#81D7F7",
     "dark": "#06A6D1",
-    "ultraLight": "#F2F8FB",
-    "ultraDark": "#0B0101",
     "background": {
       "dark": "#111111"
     }
@@ -49,7 +47,7 @@
     },
     {
       "group": "Example projects",
-      "pages": ["example-projects/steam-inventory-calculator.mdx"]
+      "pages": ["projects/steam-inventory-calculator.mdx"]
     },
     {
       "group": "API Documentation",
@@ -68,10 +66,6 @@
   "modeToggle": {
     "default": "dark",
     "isHidden": true
-  },
-  "classes": {
-    "anchors": "group-hover:bg-gradient-to-tr from-primary to-primary-dark dark:from-[#61DAFB] dark:to-[#06BCEE]",
-    "activeAnchors": "bg-gradient-to-tr"
   },
   "backgroundImage": "/images/background.png",
   "footerSocials": {
